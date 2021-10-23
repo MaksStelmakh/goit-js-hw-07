@@ -34,7 +34,8 @@ function onOpenImagesClick(evt) {
     <img src="${evt.target.dataset.source}" width="800" height="600">
 `)
   instance.show()
-  onGallery.addEventListener(`keydown`, (evt) => {if (evt.code === `Escape`) {
+  onGallery.addEventListener(`keydown`, (evt) => {
+    if (evt.code === `Escape`) {
     instance.close()
   } })
 }
